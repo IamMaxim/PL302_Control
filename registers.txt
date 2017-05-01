@@ -1,0 +1,77 @@
+pu_out_air_t:PU out temperature
+pu_out_air_t_sts:PU out temperature status
+pu_out_air_h:PU out humidity
+pu_out_air_h_sts:PU out humidity status
+room_air_t:Room temperature
+room_air_t_sts:Room temperature status
+room_air_h:Room humidity
+room_air_h_sts:Room humidity status
+ext_air_t:External temperature
+ext_air_t_sts:External temperature status
+ext_air_h:External humidity
+ext_air_h_sts:External humidity status
+//errors:errors
+//warnings:warnings
+cur_mode:Current mode
+status:Status
+//dummy0:dummy0
+cur_f:Current fan speed
+cur_f_sts:Current fan status
+//Dflap0_mode:Dflap0_mode
+//Dflap0_errors:Dflap0_errors
+//Dflap0_cur_position:Dflap0_cur_position
+//Dflap1_mode:Dflap1_mode
+//Dflap1_errors:Dflap1_errors
+//Dflap0_status:Dflap0_status
+//Dflap1_status:Dflap1_status
+//Dflap1_cur_position:Dflap1_cur_position
+//Aflap0_new_mode:Aflap0_new_mode
+//Aflap0_status:Aflap0_status
+//Aflap0_errors:Aflap0_errors
+//Aflap0_cur_position:Aflap0_cur_position
+//Aflap1_new_mode:Aflap1_new_mode
+//Aflap1_status:Aflap1_status
+//Aflap1_errors:Aflap1_errors
+//Aflap1_cur_position:Aflap1_cur_position
+//Aflap2_new_mode:Aflap2_new_mode
+//Aflap2_status:Aflap2_status
+//Aflap2_errors:Aflap2_errors
+//Aflap2_cur_position:Aflap2_cur_position
+//CFANSFB_mode:CFANSFB_mode
+//CFANSFB_status:CFANSFB_status
+//CFANSFBerrors:CFANSFBerrors
+//CFANSFB_sts_auto:CFANSFB_sts_auto
+Fan0_err:Fan 0 errors
+Fan0_sts:Fan 0 status
+Fan0_cur_work:Fan 0 current work
+Fan0_taho_speed:Fan 0 taho speed
+Fan1_err:Fan 1 errors
+Fan1_sts:Fan 1 status
+Fan1_cur_work:Fan 1 current work
+Fan1_taho_speed:Fan 1 taho speed
+Cool0_mode:Cooler 0 mode
+Cool0_status:Cooler 0 status
+Cool0_errors:Cooler 0 errors
+Cool1_mode:Cooler 1 mode
+Cool1_status:Cooler 1 status
+Cool1_errors:Cooler 1 errors
+//Ten0_mode:Ten0_mode
+//Ten0_status:Ten0_status
+//Ten0_errors:Ten0_errors
+//Ten1_mode:Ten1_mode
+//Ten1_status:Ten1_status
+//Ten1_errors:Ten1_errors
+//AI0_soft:AI0_soft
+//AI1_soft:AI1_soft
+//din_0:din_0
+//din_1:din_1
+//din_2:din_2
+//AO0_valueFB:AO0_valueFB
+//AO0_valueFB_sts:AO0_valueFB_sts
+//AO1_valueFB:AO1_valueFB
+//AO1_valueFB_sts:AO1_valueFB_sts
+//AO2_valueFB:AO2_valueFB
+//AO2_valueFB_sts:AO2_valueFB_sts
+//AO3_valueFB:AO3_valueFB
+//AO3_valueFB_sts:AO3_valueFB_sts
+t_set:Maintain temperature

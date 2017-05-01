@@ -1,0 +1,12 @@
+group 'PL302_Control'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile files('libs/jansi-1.15.jar')
+}

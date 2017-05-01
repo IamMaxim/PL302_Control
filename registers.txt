@@ -1,11 +1,11 @@
 on_off:On/Off
 t_set:Maintain temperature
 fan_task:Fan performance
-
-pu_out_air_t:PU out temperature
-pu_out_air_t_sts:PU out temperature status
-pu_out_air_h:PU out humidity
-pu_out_air_h_sts:PU out humidity status
+---
+pu_out_air_t:SU out temperature
+pu_out_air_t_sts:SU out temperature status
+pu_out_air_h:SU out humidity
+pu_out_air_h_sts:SU out humidity status
 room_air_t:Room temperature
 room_air_t_sts:Room temperature status
 room_air_h:Room humidity

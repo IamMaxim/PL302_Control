@@ -66,6 +66,10 @@ public class Main {
             String s = scanner.nextLine();
             if (s.isEmpty() || s.startsWith("//"))
                 continue;
+            if (s.equals("---")) {
+                registers.add(new Delimiter());
+                continue;
+            }
             String[] arr = s.split(":");
             registers.add(new Register(arr[0], arr[1]));
         }
@@ -75,6 +79,8 @@ public class Main {
         //PL302 can't handle too many registers in one request, so send them one by one
         registers.forEach(r -> {
             try {
+                if (r instanceof Delimiter)
+                    return;
                 r.value = Net.read(r.name).getString(r.name);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -85,6 +91,11 @@ public class Main {
     private void out() {
         System.out.println(ansi().eraseScreen());
         registers.forEach(r -> {
+            if (r instanceof Delimiter) {
+                System.out.println("----------");
+                return;
+            }
+
             if (enableColor)
                 System.out.println(ansi().fg(BLUE).bold().a(r.human_readable_name + ": ")
                         .boldOff().fgDefault().a(r.value).reset());

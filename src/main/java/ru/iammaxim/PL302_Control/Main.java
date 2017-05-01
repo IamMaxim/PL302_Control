@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static org.fusesource.jansi.Ansi.Color.*;
+import static org.fusesource.jansi.Ansi.Color.BLUE;
 import static org.fusesource.jansi.Ansi.ansi;
 
 /**
@@ -31,10 +31,22 @@ public class Main {
     public void run() throws FileNotFoundException {
         init();
 
+        //start input thread
+        new Thread(() -> {
+            Scanner in = new Scanner(System.in);
+            while (in.hasNext()) {
+                try {
+                    String s = in.nextLine();
+                    Net.write(s);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
         while (true) {
             try {
                 update();
-                System.out.println(">>> OUT <<<");
                 out();
 
                 Thread.sleep(1000);
@@ -52,7 +64,7 @@ public class Main {
         Scanner scanner = new Scanner(f);
         while (scanner.hasNext()) {
             String s = scanner.nextLine();
-            if (s.startsWith("//"))
+            if (s.isEmpty() || s.startsWith("//"))
                 continue;
             String[] arr = s.split(":");
             registers.add(new Register(arr[0], arr[1]));

@@ -1,3 +1,7 @@
+on_off:On/Off
+t_set:Maintain temperature
+fan_task:Fan performance
+
 pu_out_air_t:PU out temperature
 pu_out_air_t_sts:PU out temperature status
 pu_out_air_h:PU out humidity
@@ -74,4 +78,3 @@ Cool1_errors:Cooler 1 errors
 //AO2_valueFB_sts:AO2_valueFB_sts
 //AO3_valueFB:AO3_valueFB
 //AO3_valueFB_sts:AO3_valueFB_sts
-t_set:Maintain temperature

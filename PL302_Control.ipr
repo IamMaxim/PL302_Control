@@ -12,6 +12,29 @@
       </root>
     </artifact>
   </component>
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="CopyrightManager" default="" />
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -29,12 +52,6 @@
       </GradleProjectSettings>
     </option>
   </component>
-  <component name="InspectionProjectProfileManager">
-    <profile version="1.0">
-      <option name="myName" value="Project Default" />
-    </profile>
-    <version value="1.0" />
-  </component>
   <component name="KotlinCommonCompilerArguments">
     <option name="languageVersion" value="1.1" />
     <option name="apiVersion" value="1.1" />
@@ -44,8 +61,11 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PL302_Control.iml" filepath="$PROJECT_DIR$/.idea/modules/PL302_Control.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
   </component>
   <component name="masterDetails">
     <states>

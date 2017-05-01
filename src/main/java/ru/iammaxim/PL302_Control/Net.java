@@ -31,5 +31,9 @@ public class Net {
         url.append("http://").append(ip).append("/index.html?write=");
         url.append(String.join(delimiter, KaVs));
         HttpURLConnection connection = (HttpURLConnection) new URL(url.toString()).openConnection();
+        Scanner scanner = new Scanner(connection.getInputStream()).useDelimiter("\\A");
+        if (scanner.hasNext())
+            scanner.next();
+        scanner.close();
     }
 }
